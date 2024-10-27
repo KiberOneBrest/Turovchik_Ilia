@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    text-align: center;
+    font-size: 50px;
+    color: blue;
+}
+
+
+
+.myimage{
+    width: 100%;
+}
+
+.list{
+    list-style-type: none;
+    border: 3px dotted black;
+    width: 500px;
+    margin: 20px;
+    padding: 35px;
+}
+
+body{
+    background-color: rgb(248, 243, 236);
+
+    /* background: url(2018-08-25-400_69517-1_812454.webp); */
+}
+
+ul{
+    text-align: center;
+}
+
+
+
+nav{
+    text-align: center;
+    padding: 30px;
+}
+
+header{
+    background-color: aqua;
+    height: 110px;
+}
+
+nav a{
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 36px;
+    background-color: blueviolet;
+    color: aliceblue;
+}
+nav a:hover{
+    background-color: aquamarine;
+    color: rgb(44, 75, 64);
+    transition: all 1s linear;
+}
+section{
+    width: 90%;
+    background-color: rgb(243, 255, 188);
+    margin: 20px auto 0;
+    padding: 20px;
+}
+section p{
+    font-size: 16px;
+    color: rgb(63, 63, 52);
+}
+
+iframe{
+    width: 100%;
+    height: 700px;
+}
+
+
+div.video-container iframe{
+    width: 530px;
+    height: 315px;
+}
+
+.video-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    transform: translateX(-150%);
+}
+audio{
+    width: 100%;
+}
+section:hover{
+    transition: all 1s linear;
+    background-color: green;
+}
+/* section:hover h1{
+    transition: all 2s linear;
+    font-size:1px;
+} */
+
+.video-section:hover .video-container{
+    transition: all 1s linear;
+    transform: translateX(0px);
+}
+
+
+
+.show-img{
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    width: 330px; /* ширина элемента */
+    font-size: 24px;  /* Размер шрифта */
+    border: 1px solid black; /* Граница (размер, тип линии, цвет) */
+    padding: 20px;     /* внутренний отступ */
+    text-align: center;   /* распологаем текст по центру */
+    color: wheat;     /* изменение цвета текста */
+    margin: 0 auto 20px; 
+    /* Внешний отступ 
+    (отступ вверх, отступ слева и справа, отступ вниз) 
+    auto располагает элемент по центру 
+    родительского элемента*/
+    background-color: brown; /* изменение фонового цвета */
+    border-radius: 10px;/* используется для сглаживания углов */
+    
+}
+
+.show-img-container>img{
+    opacity: 0;
+ /* делаем наше изображение прозрачным */
+}
+/* ~ - стили применяются для соседних элементов */
+/* ~ ставится комбинацие шифт + Ё */
+.show-img:hover~img{
+    opacity: 1;
+    /* делаем изображение непрозрачным */
+    transition: all 3s linear;
+}
+
+td img{
+    width: 100px;
+    height: 60px;  
+  }
+  
+  table{
+      border-collapse: collapse;
+      width: 100%;
+  }
+  td, th{
+      border: 2px solid black;
+      padding: 5px;
+  }
+  tr:nth-child(even){
+      background-color: #f2f2f2;
+  }   
+  tr:nth-child(odd){
+      background-color: white;
+  }
+  
+  tr:hover{
+      background-color: #ddd;
+  }
+  
+  th{
+      padding-top: 8px;
+      padding-bottom: 8px;
+      /* text-align: left; */
+      background-color: #0096ff;
+      color: white;
+  }
+  td a{
+      color: black;
+  }
+  table{
+      text-align: center;
+      font-size: 24px;
+  }
+
+footer{
+    display: flex;
+    background-color: blueviolet;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.w-70{
+    width: 70%;
+}
+.w-30{
+    width: 30%;
+}
+.two-cards{
+    display: flex;
+    gap: 30px;
+}
+.card{
+    border-radius: 15px;
+    padding: 10px;
+    background-color: #f2f2f2;
+}
+
+.galery-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.galery{
+    width: 90%;
+}
+.galery-item{
+    margin-top: 10px;
+    border: 1px solid #333333;
+    border-radius: 5px;
+    float: left;
+    width: 100%;
+    background: #333333;
+}
+.zoom{
+    display: block;
+    width: 85%;
+    margin: auto;
+    height: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.zoom:hover{
+    transform: scale(1.05);
+    transition: all 0.3s linear;
+}
+.desc{
+    font-size: 18px;
+    color: #0096ff;
+    padding-left: 30px;
+}
+input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid black;
+    box-sizing: border-box;
+    border-radius: 7px;
+}
